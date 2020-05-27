@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'cervanttisregular';
+    src: url('fonts/cervanttis-webfont.woff2') format('woff2'),
+    url('fonts/cervanttis-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$black: #565656;
+$purple: #B00ECC;
+$white: #FFF;
+
+
+body {
+    font-family: 'Montserrat';
+    color: $black;
+    font-size: 18px;
+
+    @include mq-90 {
+        font-size: 20px;
+    }
+
+    @include mq-120 {
+        font-size: 22px;
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: $black;
+}
+
+p, span {
+    font-size: .9em;
+    line-height: 1.5em;
+}
